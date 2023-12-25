@@ -10,6 +10,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dvigatel.h" />
+    <ClInclude Include="src\dvigatel\Application.h" />
+    <ClInclude Include="src\dvigatel\Core.h" />
+    <ClInclude Include="src\dvigatel\EntryPoint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dvigatel\Application.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -57,9 +66,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);DVG_PLATFORM_WINDOWS;DVG_BUILD_DLL;DVG_PLATFORM_WINDOWS;DVG_PLATFORM_WINDOWS;DVG_BUILD_DLL</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -72,7 +81,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);DVG_PLATFORM_WINDOWS;DVG_BUILD_DLL;DVG_PLATFORM_WINDOWS;DVG_PLATFORM_WINDOWS;DVG_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -83,12 +92,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="src\Test.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\Test.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
