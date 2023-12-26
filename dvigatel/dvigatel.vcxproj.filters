@@ -4,6 +4,9 @@
     <Filter Include="dvigatel">
       <UniqueIdentifier>{75242F3D-61F1-8948-8A0A-78F07636BFD6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dvigatel\Events">
+      <UniqueIdentifier>{B99ACAB9-2526-387E-2E37-BB729A41947E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\dvigatel.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\dvigatel\EntryPoint.h">
       <Filter>dvigatel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dvigatel\Events\ApplicationEvent.h">
+      <Filter>dvigatel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dvigatel\Events\Event.h">
+      <Filter>dvigatel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dvigatel\Events\KeyEvent.h">
+      <Filter>dvigatel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dvigatel\Events\MouseEvent.h">
+      <Filter>dvigatel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\dvigatel\Log.h">
       <Filter>dvigatel</Filter>
