@@ -1,5 +1,6 @@
 #pragma once
 
+#include "dvgpch.h"
 #include "dvigatel/Core.h"
 
 namespace dvg{

@@ -6,11 +6,14 @@
 #include <algorithm>
 #include <functional>
 
+
 #include <string>
 #include <sstream>
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+
+#include "dvigatel/Log.h"
 
 #ifdef DVG_PLATFORM_WINDOWS
 #include <Windows.h>

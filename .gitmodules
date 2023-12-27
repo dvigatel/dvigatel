@@ -1,3 +1,6 @@
 [submodule "dvigatel/vendor/spdlog"]
 	path = dvigatel/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "dvigatel/vendor/GLFW"]
+	path = dvigatel/vendor/GLFW
+	url = git@github.com:TheCherno/glfw.git

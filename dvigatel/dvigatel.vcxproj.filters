@@ -7,6 +7,9 @@
     <Filter Include="dvigatel\Events">
       <UniqueIdentifier>{B99ACAB9-2526-387E-2E37-BB729A41947E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\dvgpch.h" />
@@ -35,6 +38,12 @@
     <ClInclude Include="src\dvigatel\Log.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvigatel\Window.h">
+      <Filter>dvigatel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\Windows.h">
+      <Filter>platform</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dvgpch.cpp" />
@@ -43,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="src\dvigatel\Log.cpp">
       <Filter>dvigatel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\Windows.cpp">
+      <Filter>platform</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
