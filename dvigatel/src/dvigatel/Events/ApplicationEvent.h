@@ -1,10 +1,9 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace dvg {
-	class  DVG_API WindowResizeEvent : public Event
+	class DVG_API WindowResizeEvent : public Event
 	{
 	public:
 		WindowResizeEvent(unsigned int width, unsigned int height)

@@ -1,3 +1,4 @@
+#include "dvgpch.h"
 #include "Application.h"
 
 #include "dvigatel/Events/ApplicationEvent.h"

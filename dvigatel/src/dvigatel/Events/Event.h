@@ -2,9 +2,6 @@
 
 #include "dvigatel/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace dvg{
 	enum class EventType {
 		None = 0,

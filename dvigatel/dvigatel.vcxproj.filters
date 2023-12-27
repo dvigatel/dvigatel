@@ -9,6 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\dvgpch.h" />
     <ClInclude Include="src\dvigatel.h" />
     <ClInclude Include="src\dvigatel\Application.h">
       <Filter>dvigatel</Filter>
@@ -36,6 +37,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\dvgpch.cpp" />
     <ClCompile Include="src\dvigatel\Application.cpp">
       <Filter>dvigatel</Filter>
     </ClCompile>

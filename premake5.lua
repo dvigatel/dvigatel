@@ -17,6 +17,9 @@ project "dvigatel"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "dvgpch.h"
+	pchsource "dvigatel/src/dvgpch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",

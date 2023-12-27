@@ -1,10 +1,8 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace dvg {
-
 	class DVG_API KeyEvent : public Event {
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }

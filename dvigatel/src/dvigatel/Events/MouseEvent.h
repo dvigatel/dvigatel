@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace dvg {
 	class DVG_API MouseMovedEvent : public Event {
