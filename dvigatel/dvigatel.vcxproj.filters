@@ -35,6 +35,12 @@
     <ClInclude Include="src\dvigatel\Events\MouseEvent.h">
       <Filter>dvigatel\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvigatel\Layer.h">
+      <Filter>dvigatel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dvigatel\LayerStack.h">
+      <Filter>dvigatel</Filter>
+    </ClInclude>
     <ClInclude Include="src\dvigatel\Log.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
@@ -48,6 +54,12 @@
   <ItemGroup>
     <ClCompile Include="src\dvgpch.cpp" />
     <ClCompile Include="src\dvigatel\Application.cpp">
+      <Filter>dvigatel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dvigatel\Layer.cpp">
+      <Filter>dvigatel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dvigatel\LayerStack.cpp">
       <Filter>dvigatel</Filter>
     </ClCompile>
     <ClCompile Include="src\dvigatel\Log.cpp">
