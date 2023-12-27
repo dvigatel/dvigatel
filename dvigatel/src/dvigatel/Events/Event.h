@@ -57,7 +57,7 @@ namespace dvg{
 				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
-			return false
+			return false;
 		}
 
 	private:
