@@ -4,3 +4,6 @@
 [submodule "dvigatel/vendor/GLFW"]
 	path = dvigatel/vendor/GLFW
 	url = git@github.com:TheCherno/glfw.git
+[submodule "dvigatel/vendor/imgui"]
+	path = dvigatel/vendor/imgui
+	url = git@github.com:TheCherno/imgui.git

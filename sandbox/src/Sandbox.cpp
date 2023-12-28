@@ -17,6 +17,7 @@ class Sandbox : public dvg::Application {
 	public:
 		Sandbox() {
 			PushLayer(new ExampleLayer());
+			PushLayer(new dvg::ImGuiLayer());
 		}
 		~Sandbox(){}
 };

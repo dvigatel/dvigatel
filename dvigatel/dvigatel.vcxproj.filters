@@ -50,6 +50,8 @@
     <ClInclude Include="src\platform\Windows.h">
       <Filter>platform</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dvgpch.cpp" />
@@ -68,5 +70,7 @@
     <ClCompile Include="src\platform\Windows.cpp">
       <Filter>platform</Filter>
     </ClCompile>
+    <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\platform\opengl\ImGuiOpenGLRenderer.cpp" />
   </ItemGroup>
 </Project>
