@@ -10,8 +10,10 @@ workspace "dvigatel"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "dvigatel/vendor/GLFW/include"
+IncludeDir["Glad"] = "dvigatel/vendor/Glad/include"
 
 include "dvigatel/vendor/GLFW"
+include "dvigatel/vendor/GLAD"
 
 project "dvigatel"
 	location "dvigatel"
@@ -32,11 +34,13 @@ project "dvigatel"
 	includedirs {
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links {
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -47,6 +51,7 @@ project "dvigatel"
 		defines {
 			"DVG_PLATFORM_WINDOWS", 
 			"DVG_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands {

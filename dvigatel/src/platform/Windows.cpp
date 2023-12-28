@@ -5,6 +5,8 @@
 #include "dvigatel/Events/MouseEvent.h"
 #include "dvigatel/Events/ApplicationEvent.h"
 
+#include <glad/glad.h>
+
 namespace dvg {
 	static bool s_GLFWInitialized = false;
 	static void GLFWErrorCallback(int error, const char* description) {
@@ -39,6 +41,8 @@ namespace dvg {
 
 		m_Window = glfwCreateWindow((int)props.Width,(int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		DVG_CORE_ASSERT(status, "Failed to init Glad");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
