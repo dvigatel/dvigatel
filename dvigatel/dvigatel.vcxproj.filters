@@ -7,8 +7,14 @@
     <Filter Include="dvigatel\Events">
       <UniqueIdentifier>{B99ACAB9-2526-387E-2E37-BB729A41947E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="dvigatel\ImGui">
+      <UniqueIdentifier>{5F5D60F6-4B2B-54FC-34BF-C422202C3061}</UniqueIdentifier>
+    </Filter>
     <Filter Include="platform">
       <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\opengl">
+      <UniqueIdentifier>{9E4DBFD0-0AD9-2C95-13EA-AF897FF48895}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -35,6 +41,9 @@
     <ClInclude Include="src\dvigatel\Events\MouseEvent.h">
       <Filter>dvigatel\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h">
+      <Filter>dvigatel\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\dvigatel\Layer.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
@@ -50,14 +59,17 @@
     <ClInclude Include="src\platform\Windows.h">
       <Filter>platform</Filter>
     </ClInclude>
-    <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
-    <ClInclude Include="vendor\imgui\backends\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h" />
+    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h">
+      <Filter>platform\opengl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dvgpch.cpp" />
     <ClCompile Include="src\dvigatel\Application.cpp">
       <Filter>dvigatel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp">
+      <Filter>dvigatel\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\dvigatel\Layer.cpp">
       <Filter>dvigatel</Filter>
@@ -71,7 +83,8 @@
     <ClCompile Include="src\platform\Windows.cpp">
       <Filter>platform</Filter>
     </ClCompile>
-    <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp" />
-    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp">
+      <Filter>platform\opengl</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

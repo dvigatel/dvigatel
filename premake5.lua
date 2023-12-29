@@ -8,6 +8,7 @@ workspace "dvigatel"
 	}
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
 IncludeDir = {}
 IncludeDir["GLFW"] = "dvigatel/vendor/GLFW/include"
 IncludeDir["Glad"] = "dvigatel/vendor/Glad/include"
@@ -21,6 +22,7 @@ project "dvigatel"
 	location "dvigatel"
 	kind "SharedLib"
 	language "C++"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -65,23 +67,24 @@ project "dvigatel"
 
 	filter "configurations:Debug"
 		defines "DVG_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "DVG_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "DVG_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 project "sandbox"
 	location "sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -102,7 +105,6 @@ project "sandbox"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 
 		defines {
@@ -111,16 +113,16 @@ project "sandbox"
 
 	filter "configurations:Debug"
 		defines "DVG_DEBUG"
-		buildoptions "/MDd"
+		runtime "Debug"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "DVG_RELEASE"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "DVG_DIST"
-		buildoptions "/MD"
+		runtime "Release"
 		optimize "On"
 

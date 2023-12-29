@@ -5,10 +5,7 @@ extern dvg::Application* dvg::CreateApplication();
 
 int main(int argc, char **argv) {
 	dvg::Log::Init();
-	DVG_CORE_WARN("INITIALIZED");
-	int a = 5;
-	DVG_INFO("Hello, Var={0}", a);
-
+	DVG_CORE_WARN("init log");
 	auto app = dvg::CreateApplication();
 	app->Run();
 	delete app;

@@ -83,7 +83,7 @@
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -109,7 +109,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
-      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -136,7 +136,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
-      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -152,7 +152,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\dvgpch.h" />
     <ClInclude Include="src\dvigatel.h" />
     <ClInclude Include="src\dvigatel\Application.h" />
@@ -162,25 +161,25 @@
     <ClInclude Include="src\dvigatel\Events\Event.h" />
     <ClInclude Include="src\dvigatel\Events\KeyEvent.h" />
     <ClInclude Include="src\dvigatel\Events\MouseEvent.h" />
+    <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\dvigatel\Layer.h" />
     <ClInclude Include="src\dvigatel\LayerStack.h" />
     <ClInclude Include="src\dvigatel\Log.h" />
     <ClInclude Include="src\dvigatel\Window.h" />
-    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h" />
     <ClInclude Include="src\platform\Windows.h" />
-    <ClInclude Include="vendor\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\dvgpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\dvigatel\Application.cpp" />
+    <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\dvigatel\Layer.cpp" />
     <ClCompile Include="src\dvigatel\LayerStack.cpp" />
     <ClCompile Include="src\dvigatel\Log.cpp" />
-    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp" />
     <ClCompile Include="src\platform\Windows.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
