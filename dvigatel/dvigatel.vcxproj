@@ -162,11 +162,13 @@
     <ClInclude Include="src\dvigatel\Events\KeyEvent.h" />
     <ClInclude Include="src\dvigatel\Events\MouseEvent.h" />
     <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\dvigatel\Input.h" />
     <ClInclude Include="src\dvigatel\Layer.h" />
     <ClInclude Include="src\dvigatel\LayerStack.h" />
     <ClInclude Include="src\dvigatel\Log.h" />
     <ClInclude Include="src\dvigatel\Window.h" />
-    <ClInclude Include="src\platform\Windows.h" />
+    <ClInclude Include="src\platform\windows\Input.h" />
+    <ClInclude Include="src\platform\windows\Windows.h" />
     <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h" />
   </ItemGroup>
   <ItemGroup>
@@ -178,7 +180,8 @@
     <ClCompile Include="src\dvigatel\Layer.cpp" />
     <ClCompile Include="src\dvigatel\LayerStack.cpp" />
     <ClCompile Include="src\dvigatel\Log.cpp" />
-    <ClCompile Include="src\platform\Windows.cpp" />
+    <ClCompile Include="src\platform\windows\Input.cpp" />
+    <ClCompile Include="src\platform\windows\Windows.cpp" />
     <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp" />
   </ItemGroup>
   <ItemGroup>
