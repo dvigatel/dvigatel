@@ -166,8 +166,9 @@
     <ClInclude Include="src\dvigatel\LayerStack.h" />
     <ClInclude Include="src\dvigatel\Log.h" />
     <ClInclude Include="src\dvigatel\Window.h" />
-    <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h" />
     <ClInclude Include="src\platform\Windows.h" />
+    <ClInclude Include="vendor\imgui\backends\imgui_impl_opengl3_loader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp" />
@@ -178,7 +179,7 @@
     <ClCompile Include="src\dvigatel\Layer.cpp" />
     <ClCompile Include="src\dvigatel\LayerStack.cpp" />
     <ClCompile Include="src\dvigatel\Log.cpp" />
-    <ClCompile Include="src\platform\opengl\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp" />
     <ClCompile Include="src\platform\Windows.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -51,7 +51,8 @@
       <Filter>platform</Filter>
     </ClInclude>
     <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
-    <ClInclude Include="src\platform\opengl\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="vendor\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dvgpch.cpp" />
@@ -71,6 +72,6 @@
       <Filter>platform</Filter>
     </ClCompile>
     <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp" />
-    <ClCompile Include="src\platform\opengl\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp" />
   </ItemGroup>
 </Project>
