@@ -163,9 +163,11 @@
     <ClInclude Include="src\dvigatel\Events\MouseEvent.h" />
     <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\dvigatel\Input.h" />
+    <ClInclude Include="src\dvigatel\KeyCodes.h" />
     <ClInclude Include="src\dvigatel\Layer.h" />
     <ClInclude Include="src\dvigatel\LayerStack.h" />
     <ClInclude Include="src\dvigatel\Log.h" />
+    <ClInclude Include="src\dvigatel\MouseButtonCodes.h" />
     <ClInclude Include="src\dvigatel\Window.h" />
     <ClInclude Include="src\platform\windows\Input.h" />
     <ClInclude Include="src\platform\windows\Windows.h" />

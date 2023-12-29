@@ -5,11 +5,12 @@ public:
 	ExampleLayer() : Layer("example") {}
 
 	void OnUpdate() override {
-		DVG_INFO("ExampleLayer::OnUpdate");
+		if (dvg::Input::IsKeyPressed(DVG_KEY_TAB))
+			DVG_TRACE("TAB KEY IS PRESSED");
 	}
 
 	void OnEvent(dvg::Event& event) override {
-		DVG_TRACE("{0}", event);
+		// DVG_TRACE("{0}", event);
 	}
 };
 
