@@ -3,9 +3,11 @@
 
 #include "imgui.h"
 #include "platform/opengl/imgui_impl_opengl3.h"
+
+#include "dvigatel/Application.h"
+
 #include "GLFW/glfw3.h"
 #include <glad/glad.h>
-#include "dvigatel/Application.h"
 
 namespace dvg {
 
@@ -65,7 +67,7 @@ namespace dvg {
 		dispatcher.Dispatch<MouseMovedEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnMouseMovedEvent));
 		dispatcher.Dispatch<MouseScrolledEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnMouseScrolledEvent));
 		dispatcher.Dispatch<KeyPressedEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnKeyPressedEvent));
-		// dispatcher.Dispatch<KeyTypedEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnKeyTypedEvent));
+		dispatcher.Dispatch<KeyTypedEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnKeyTypedEvent));
 		dispatcher.Dispatch<KeyReleasedEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnKeyReleasedEvent));
 		dispatcher.Dispatch<WindowResizeEvent>(DVG_BIND_EVENT_FN(ImGuiLayer::OnWindowResizeEvent));
 	}
@@ -120,6 +122,16 @@ namespace dvg {
 	{
 		ImGuiIO& io = ImGui::GetIO();
 		io.KeysDown[e.GetKeyCode()] = false;
+
+		return false;
+	}
+
+	bool ImGuiLayer::OnKeyTypedEvent(KeyTypedEvent& e)
+	{
+		ImGuiIO& io = ImGui::GetIO();
+		int keycode = e.GetKeyCode();
+		if (keycode > 0 && keycode < 0x10000)
+			io.AddInputCharacter((unsigned short)keycode);
 
 		return false;
 	}

@@ -26,7 +26,7 @@ namespace dvg {
 		bool OnMouseScrolledEvent(MouseScrolledEvent& e);
 		bool OnKeyPressedEvent(KeyPressedEvent& e);
 		bool OnKeyReleasedEvent(KeyReleasedEvent& e);
-		// void OnKeyTypedEvent(KeyTypedEvent& e);
+		bool OnKeyTypedEvent(KeyTypedEvent& e);
 		bool OnWindowResizeEvent(WindowResizeEvent& e);
 	private:
 		float m_Time = 0.0f;
