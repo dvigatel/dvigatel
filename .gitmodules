@@ -7,3 +7,6 @@
 [submodule "dvigatel/vendor/imgui"]
 	path = dvigatel/vendor/imgui
 	url = git@github.com:TheCherno/imgui.git
+[submodule "dvigatel/vendor/glm"]
+	path = dvigatel/vendor/glm
+	url = git@github.com:g-truc/glm.git

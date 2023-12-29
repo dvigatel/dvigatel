@@ -16,6 +16,9 @@
     <Filter Include="platform\opengl">
       <UniqueIdentifier>{9E4DBFD0-0AD9-2C95-13EA-AF897FF48895}</UniqueIdentifier>
     </Filter>
+    <Filter Include="platform\windows">
+      <UniqueIdentifier>{A44FC440-9048-E392-B97A-C817A5D2C29E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\dvgpch.h" />
@@ -44,6 +47,12 @@
     <ClInclude Include="src\dvigatel\ImGui\ImGuiLayer.h">
       <Filter>dvigatel\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvigatel\Input.h">
+      <Filter>dvigatel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dvigatel\KeyCodes.h">
+      <Filter>dvigatel</Filter>
+    </ClInclude>
     <ClInclude Include="src\dvigatel\Layer.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
@@ -53,14 +62,20 @@
     <ClInclude Include="src\dvigatel\Log.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
+    <ClInclude Include="src\dvigatel\MouseButtonCodes.h">
+      <Filter>dvigatel</Filter>
+    </ClInclude>
     <ClInclude Include="src\dvigatel\Window.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
-    <ClInclude Include="src\platform\Windows.h">
-      <Filter>platform</Filter>
-    </ClInclude>
     <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h">
       <Filter>platform\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\windows\Input.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\windows\Windows.h">
+      <Filter>platform\windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -80,11 +95,14 @@
     <ClCompile Include="src\dvigatel\Log.cpp">
       <Filter>dvigatel</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\Windows.cpp">
-      <Filter>platform</Filter>
-    </ClCompile>
     <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp">
       <Filter>platform\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Input.cpp">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\windows\Windows.cpp">
+      <Filter>platform\windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

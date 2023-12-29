@@ -2,7 +2,7 @@
 
 class ExampleLayer : public dvg::Layer {
 public:
-	ExampleLayer() : Layer("example") {}
+	ExampleLayer() : Layer("example") { }
 
 	void OnUpdate() override {
 		if (dvg::Input::IsKeyPressed(DVG_KEY_TAB))

@@ -13,6 +13,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "dvigatel/vendor/GLFW/include"
 IncludeDir["Glad"] = "dvigatel/vendor/Glad/include"
 IncludeDir["ImGui"] = "dvigatel/vendor/imgui"
+IncludeDir["glm"] = "dvigatel/vendor/glm"
 
 include "dvigatel/vendor/GLFW"
 include "dvigatel/vendor/GLAD"
@@ -33,6 +34,8 @@ project "dvigatel"
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp",
+		"${prj.name}/vendor/glm/glm/**.hpp",
+		"${prj.name}/vendor/glm/glm/**.inl",
 	}
 
 	includedirs {
@@ -40,7 +43,8 @@ project "dvigatel"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links {
@@ -96,7 +100,8 @@ project "sandbox"
 
 	includedirs {
 		"dvigatel/vendor/spdlog/include",
-		"dvigatel/src"
+		"dvigatel/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links {
