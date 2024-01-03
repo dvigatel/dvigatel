@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef DVG_PLATFORM_WINDOWS
+#if DVG_DYNAMIC_LINK
 	#ifdef DVG_BUILD_DLL
 		#define DVG_API __declspec(dllexport)
 	#else
 		#define DVG_API __declspec(dllimport)
 	#endif
+#else
+	#define DVG_API
+#endif
 #else
 	#error dvigatel only support Windows!
 #endif

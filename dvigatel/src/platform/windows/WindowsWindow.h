@@ -1,8 +1,10 @@
 #pragma once
 
 #include "dvigatel/Window.h"
+#include "dvigatel/Renderer/GraphicsContext.h"
 
 #include "GLFW/glfw3.h"
+
 
 namespace dvg {
 	class WindowsWindow : public Window {
@@ -25,6 +27,7 @@ namespace dvg {
 		virtual void Shutdown();
 
 		GLFWwindow* m_Window;
+		GraphicsContext* m_Context;
 
 		struct WindowData {
 			std::string Title;

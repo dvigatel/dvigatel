@@ -13,9 +13,6 @@
     <Filter Include="platform">
       <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="platform\opengl">
-      <UniqueIdentifier>{9E4DBFD0-0AD9-2C95-13EA-AF897FF48895}</UniqueIdentifier>
-    </Filter>
     <Filter Include="platform\windows">
       <UniqueIdentifier>{A44FC440-9048-E392-B97A-C817A5D2C29E}</UniqueIdentifier>
     </Filter>
@@ -68,9 +65,6 @@
     <ClInclude Include="src\dvigatel\Window.h">
       <Filter>dvigatel</Filter>
     </ClInclude>
-    <ClInclude Include="src\platform\opengl\imgui_impl_opengl3.h">
-      <Filter>platform\opengl</Filter>
-    </ClInclude>
     <ClInclude Include="src\platform\windows\Input.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
@@ -83,6 +77,9 @@
     <ClCompile Include="src\dvigatel\Application.cpp">
       <Filter>dvigatel</Filter>
     </ClCompile>
+    <ClCompile Include="src\dvigatel\ImGui\ImGuiBuild.cpp">
+      <Filter>dvigatel\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\dvigatel\ImGui\ImGuiLayer.cpp">
       <Filter>dvigatel\ImGui</Filter>
     </ClCompile>
@@ -94,9 +91,6 @@
     </ClCompile>
     <ClCompile Include="src\dvigatel\Log.cpp">
       <Filter>dvigatel</Filter>
-    </ClCompile>
-    <ClCompile Include="src\platform\opengl\imgui_impl_opengl3.cpp">
-      <Filter>platform\opengl</Filter>
     </ClCompile>
     <ClCompile Include="src\platform\windows\Input.cpp">
       <Filter>platform\windows</Filter>

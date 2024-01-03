@@ -8,6 +8,8 @@
 #include "dvigatel/Events/Event.h"
 #include "dvigatel/Events/ApplicationEvent.h"
 
+#include "dvigatel/ImGui/ImGuiLayer.h"
+
 namespace dvg {
 
 	class DVG_API Application {
@@ -29,6 +31,7 @@ namespace dvg {
 		bool OnWindowClose(WindowCloseEvent& e);
 
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 

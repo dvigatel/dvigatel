@@ -1,4 +1,5 @@
 #include <dvigatel.h>
+#include "imgui/imgui.h"
 
 class ExampleLayer : public dvg::Layer {
 public:
@@ -7,6 +8,9 @@ public:
 	void OnUpdate() override {
 		if (dvg::Input::IsKeyPressed(DVG_KEY_TAB))
 			DVG_TRACE("TAB KEY IS PRESSED");
+	}
+
+	virtual void OnImGuiRender() override {
 	}
 
 	void OnEvent(dvg::Event& event) override {
@@ -18,7 +22,6 @@ class Sandbox : public dvg::Application {
 	public:
 		Sandbox() {
 			PushLayer(new ExampleLayer());
-			PushLayer(new dvg::ImGuiLayer());
 		}
 		~Sandbox(){}
 };
