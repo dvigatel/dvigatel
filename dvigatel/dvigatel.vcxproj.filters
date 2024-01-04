@@ -68,9 +68,13 @@
     <ClInclude Include="src\platform\windows\Input.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\platform\windows\Windows.h">
-      <Filter>platform\windows</Filter>
-    </ClInclude>
+    <ClInclude Include="src\dvigatel\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\dvigatel\Renderer\Shader.h" />
+    <ClInclude Include="src\platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\platform\windows\WindowsWindow.h" />
+    <ClInclude Include="src\dvigatel\Renderer\Buffer.h" />
+    <ClInclude Include="src\platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\dvigatel\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dvgpch.cpp" />
@@ -95,8 +99,11 @@
     <ClCompile Include="src\platform\windows\Input.cpp">
       <Filter>platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\windows\Windows.cpp">
-      <Filter>platform\windows</Filter>
-    </ClCompile>
+    <ClCompile Include="src\dvigatel\Renderer\Shader.cpp" />
+    <ClCompile Include="src\platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\platform\windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\dvigatel\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\dvigatel\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>

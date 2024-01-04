@@ -143,6 +143,9 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\dvigatel\Renderer\Renderer.h" />
+    <ClInclude Include="src\platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\dvigatel\Renderer\Buffer.h" />
     <ClInclude Include="src\dvgpch.h" />
     <ClInclude Include="src\dvigatel.h" />
     <ClInclude Include="src\dvigatel\Application.h" />
@@ -167,6 +170,9 @@
     <ClInclude Include="src\platform\windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\dvigatel\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\dvigatel\Renderer\Buffer.cpp" />
     <ClCompile Include="src\dvgpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
