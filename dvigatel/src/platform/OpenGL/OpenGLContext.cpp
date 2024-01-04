@@ -17,6 +17,10 @@ namespace dvg {
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		DVG_CORE_ASSERT(status, "Failed to init Glad");
+
+		DVG_CORE_INFO("Vendor: {0}", (const char*) glGetString(GL_VENDOR));
+		DVG_CORE_INFO("Renderer: {0}", (const char*) glGetString(GL_RENDERER));
+		DVG_CORE_INFO("Version: {0}", (const char*) glGetString(GL_VERSION));
 	}
 
 	void OpenGLContext::SwapBuffers()

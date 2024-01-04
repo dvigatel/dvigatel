@@ -160,6 +160,7 @@
     <ClInclude Include="src\dvigatel\Log.h" />
     <ClInclude Include="src\dvigatel\MouseButtonCodes.h" />
     <ClInclude Include="src\dvigatel\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\dvigatel\Renderer\Shader.h" />
     <ClInclude Include="src\dvigatel\Window.h" />
     <ClInclude Include="src\platform\OpenGL\OpenGLContext.h" />
     <ClInclude Include="src\platform\windows\Input.h" />
@@ -175,6 +176,7 @@
     <ClCompile Include="src\dvigatel\Layer.cpp" />
     <ClCompile Include="src\dvigatel\LayerStack.cpp" />
     <ClCompile Include="src\dvigatel\Log.cpp" />
+    <ClCompile Include="src\dvigatel\Renderer\Shader.cpp" />
     <ClCompile Include="src\platform\OpenGL\OpenGLContext.cpp" />
     <ClCompile Include="src\platform\windows\Input.cpp" />
     <ClCompile Include="src\platform\windows\WindowsWindow.cpp" />
