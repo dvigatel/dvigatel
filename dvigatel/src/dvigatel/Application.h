@@ -11,6 +11,7 @@
 #include "dvigatel/ImGui/ImGuiLayer.h"
 #include "dvigatel/Renderer/Shader.h"
 #include "dvigatel/Renderer/Buffer.h"
+#include "dvigatel/Renderer/VertexArray.h"
 
 namespace dvg {
 
@@ -37,10 +38,8 @@ namespace dvg {
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 
-		unsigned int m_VertexArray;
-		std::unique_ptr<Shader> m_Shader;
-		std::unique_ptr<VertexBuffer> m_VertexBuffer;
-		std::unique_ptr<IndexBuffer> m_IndexBuffer;
+		std::shared_ptr<Shader> m_Shader;
+		std::shared_ptr<VertexArray> m_VertexArray;
 	private:
 		static Application* s_Instance;
 	};
