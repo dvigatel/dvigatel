@@ -13,6 +13,7 @@
 #include "dvigatel/Renderer/Buffer.h"
 #include "dvigatel/Renderer/VertexArray.h"
 
+#include "dvigatel/Renderer/OrthographicCamera.h"
 namespace dvg {
 
 	class DVG_API Application {
@@ -40,6 +41,7 @@ namespace dvg {
 
 		std::shared_ptr<Shader> m_Shader;
 		std::shared_ptr<VertexArray> m_VertexArray;
+		OrthographicCamera m_Camera;
 	private:
 		static Application* s_Instance;
 	};
