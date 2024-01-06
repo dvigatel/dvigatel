@@ -10,4 +10,13 @@
 
 #include "dvigatel/ImGui/ImGuiLayer.h"
 
+#include "dvigatel/Renderer/Renderer.h"
+#include "dvigatel/Renderer/RenderCommand.h"
+
+#include "dvigatel/Renderer/Buffer.h"
+#include "dvigatel/Renderer/Shader.h"
+#include "dvigatel/Renderer/VertexArray.h"
+
+#include "dvigatel/Renderer/OrthographicCamera.h"
+
 #include "dvigatel/EntryPoint.h"
